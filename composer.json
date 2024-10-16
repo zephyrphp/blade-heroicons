@@ -1,0 +1,48 @@
+{
+    "name": "zephyrphp/blade-heroicons",
+    "description": "Heroicons in your Laravel Blade views.",
+    "keywords": [
+        "zephyr",
+        "laravel",
+        "blade",
+        "heroicons"
+    ],
+    "homepage": "https://github.com/zephyrphp/blade-heroicons",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabrice Planchette",
+            "email": "planchettefabrice@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.28"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zephyr\\BladeHeroicons\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zephyr\\BladeHeroicons\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/pint"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zephyr\\BladeHeroicons\\BladeHeroiconsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
